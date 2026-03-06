@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function Dashboard() {
+export default function Conteos() {
   const navigate = useNavigate();
 
   return (
@@ -23,14 +23,14 @@ export default function Dashboard() {
           <div className="space-y-2">
             <button
               onClick={() => navigate('/')}
-              className="w-full flex items-center space-x-3 px-4 py-3 bg-teal-50 text-teal-700 rounded-lg transition-colors cursor-pointer"
+              className="w-full flex items-center space-x-3 px-4 py-3 text-slate-600 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer"
             >
               <i className="ri-truck-line text-xl"></i>
               <span className="font-medium text-sm">Expediciones</span>
             </button>
             <button
               onClick={() => navigate('/conteos')}
-              className="w-full flex items-center space-x-3 px-4 py-3 text-slate-600 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer"
+              className="w-full flex items-center space-x-3 px-4 py-3 bg-teal-50 text-teal-700 rounded-lg transition-colors cursor-pointer"
             >
               <i className="ri-numbers-line text-xl"></i>
               <span className="font-medium text-sm">Inventarios</span>
@@ -43,7 +43,7 @@ export default function Dashboard() {
       <div className="flex-1 flex flex-col overflow-hidden">
         <header className="bg-white shadow-sm px-8 py-4 border-b border-slate-200">
           <div>
-            <h2 className="text-2xl font-bold text-slate-800">Reporte de Expediciones</h2>
+            <h2 className="text-2xl font-bold text-slate-800">Reporte de Inventarios</h2>
             <p className="text-sm text-slate-500 mt-1">Visualización de datos en tiempo real</p>
           </div>
         </header>
@@ -51,11 +51,13 @@ export default function Dashboard() {
         <main className="flex-1 overflow-auto p-8">
           <div className="bg-white rounded-xl shadow-sm h-full">
             <iframe
-              title="Reporte expediciones"
-              src="https://app.powerbi.com/view?r=eyJrIjoiN2FiZjFjYjAtNDNhNi00NTE0LTkxYWEtY2I3YTkwNmI2YTk0IiwidCI6IjQ4NmM5OGQ2LTczMzUtNGJjMS04ZTQzLTRiMjVmNDE3ZGI0NCIsImMiOjR9"
-              className="w-full h-full rounded-xl"
+              title="Conteos"
+              width="100%"
+              height="100%"
+              src="https://app.powerbi.com/reportEmbed?reportId=13875d14-cc9d-46ff-b643-2f02802fe1b4&autoAuth=true&ctid=920efafc-ec9f-4cba-ace3-c2e858369cf9"
               frameBorder={0}
               allowFullScreen
+              className="rounded-xl w-full h-full"
             />
           </div>
         </main>
