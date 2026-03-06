@@ -1,21 +1,38 @@
-import type { RouteObject } from "react-router-dom";
-import NotFound from "../pages/NotFound";
-import Dashboard from "../pages/dashboard/page";
-import Conteos from "../pages/conteos/page";
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
 
-const routes: RouteObject[] = [
-  {
-    path: "/",
-    element: <Dashboard />,
-  },
-  {
-    path: "/conteos",
-    element: <Conteos />,
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-];
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
 
-export default routes;
+    /* Linting */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": false,
+    "useUnknownInCatchVariables": false,
+    "alwaysStrict": false,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": false,
+    "noUncheckedSideEffectImports": false,
+    "paths": {
+      "@/*": ["./src/*"],
+    }
+  },
+  "include": ["src", "vite-env.d.ts"]
+}

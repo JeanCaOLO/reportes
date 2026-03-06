@@ -1,11 +1,16 @@
 import type { RouteObject } from "react-router-dom";
 import NotFound from "../pages/NotFound";
-import Home from "../pages/home/page";
+import Dashboard from "../pages/dashboard/page";
+import Conteos from "../pages/conteos/page";
 
 const routes: RouteObject[] = [
   {
     path: "/",
-    element: <Home />,
+    element: <Dashboard />,
+  },
+  {
+    path: "/conteos",
+    element: <Conteos />,
   },
   {
     path: "*",
