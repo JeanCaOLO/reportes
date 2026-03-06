@@ -54,7 +54,7 @@ export default function Conteos() {
               title="Conteos"
               width="100%"
               height="100%"
-              src="https://app.powerbi.com/reportEmbed?reportId=13875d14-cc9d-46ff-b643-2f02802fe1b4&autoAuth=true&ctid=920efafc-ec9f-4cba-ace3-c2e858369cf9"
+              src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZGNiODAxZmUtYTVkYi00NDUyLTkyZjgtMTJjMTM1YzQwNjM4IiwidCI6ImEzNzkxYmJhLWU1YzAtNDA1OS1iNmE5LTRhNmI5ZDUzNWFjNCIsImMiOjR9"
               frameBorder={0}
               allowFullScreen
               className="rounded-xl w-full h-full"
