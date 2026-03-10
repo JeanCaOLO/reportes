@@ -2,6 +2,7 @@ import type { RouteObject } from "react-router-dom";
 import NotFound from "../pages/NotFound";
 import Dashboard from "../pages/dashboard/page";
 import Conteos from "../pages/conteos/page";
+import Crossdocking from "../pages/crossdocking/page";
 
 const routes: RouteObject[] = [
   {
@@ -11,6 +12,10 @@ const routes: RouteObject[] = [
   {
     path: "/conteos",
     element: <Conteos />,
+  },
+  {
+    path: "/crossdocking",
+    element: <Crossdocking />,
   },
   {
     path: "*",
