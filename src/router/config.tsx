@@ -3,6 +3,8 @@ import NotFound from "../pages/NotFound";
 import Dashboard from "../pages/dashboard/page";
 import Conteos from "../pages/conteos/page";
 import Crossdocking from "../pages/crossdocking/page";
+import Auditorias from "../pages/auditorias/page";
+import AlertasPicking from "../pages/alertaspicking/page";
 
 const routes: RouteObject[] = [
   {
@@ -16,6 +18,14 @@ const routes: RouteObject[] = [
   {
     path: "/crossdocking",
     element: <Crossdocking />,
+  },
+  {
+    path: "/auditorias",
+    element: <Auditorias />,
+  },
+  {
+    path: "/alertas-picking",
+    element: <AlertasPicking />,
   },
   {
     path: "*",

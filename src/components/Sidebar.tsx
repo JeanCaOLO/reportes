@@ -20,6 +20,16 @@ export default function Sidebar() {
       path: '/crossdocking',
       label: 'Crossdocking',
       icon: 'ri-dashboard-line'
+    },
+    {
+      path: '/auditorias',
+      label: 'Auditorias',
+      icon: 'ri-file-search-line'
+    },
+    {
+      path: '/alertas-picking',
+      label: 'Alertas Picking',
+      icon: 'ri-alarm-warning-line'
     }
   ];
 
