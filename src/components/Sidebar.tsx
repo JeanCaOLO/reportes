@@ -12,11 +12,6 @@ export default function Sidebar() {
       icon: 'ri-truck-line'
     },
     {
-      path: '/conteos',
-      label: 'Inventarios',
-      icon: 'ri-numbers-line'
-    },
-    {
       path: '/crossdocking',
       label: 'Crossdocking',
       icon: 'ri-dashboard-line'
@@ -27,9 +22,19 @@ export default function Sidebar() {
       icon: 'ri-file-search-line'
     },
     {
+      path: '/conteos',
+      label: 'Ciclicos',
+      icon: 'ri-numbers-line'
+    },
+    {
       path: '/alertas-picking',
       label: 'Alertas Picking',
       icon: 'ri-alarm-warning-line'
+    },
+    {
+      path: '/diferencia-tiendas',
+      label: 'Diferencia Tiendas EPA',
+      icon: 'ri-store-2-line'
     }
   ];
 

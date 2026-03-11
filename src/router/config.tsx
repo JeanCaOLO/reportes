@@ -5,6 +5,7 @@ import Conteos from "../pages/conteos/page";
 import Crossdocking from "../pages/crossdocking/page";
 import Auditorias from "../pages/auditorias/page";
 import AlertasPicking from "../pages/alertaspicking/page";
+import DiferenciaTiendas from "../pages/diferenciatiendas/page";
 
 const routes: RouteObject[] = [
   {
@@ -26,6 +27,10 @@ const routes: RouteObject[] = [
   {
     path: "/alertas-picking",
     element: <AlertasPicking />,
+  },
+  {
+    path: "/diferencia-tiendas",
+    element: <DiferenciaTiendas />,
   },
   {
     path: "*",
