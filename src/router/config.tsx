@@ -6,6 +6,8 @@ import Crossdocking from "../pages/crossdocking/page";
 import Auditorias from "../pages/auditorias/page";
 import AlertasPicking from "../pages/alertaspicking/page";
 import DiferenciaTiendas from "../pages/diferenciatiendas/page";
+import InventarioEPA from "../pages/inventarioepa/page";
+import InventarioCofersa from "../pages/inventariocofersa/page";
 
 const routes: RouteObject[] = [
   {
@@ -19,6 +21,14 @@ const routes: RouteObject[] = [
   {
     path: "/crossdocking",
     element: <Crossdocking />,
+  },
+  {
+    path: "/inventario-epa",
+    element: <InventarioEPA />,
+  },
+  {
+    path: "/inventario-cofersa",
+    element: <InventarioCofersa />,
   },
   {
     path: "/auditorias",

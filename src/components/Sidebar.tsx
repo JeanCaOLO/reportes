@@ -17,6 +17,16 @@ export default function Sidebar() {
       icon: 'ri-dashboard-line'
     },
     {
+      path: '/inventario-epa',
+      label: 'Inventario EPA',
+      icon: 'ri-file-list-3-line'
+    },
+    {
+      path: '/inventario-cofersa',
+      label: 'Inventario Cofersa',
+      icon: 'ri-file-list-2-line'
+    },
+    {
       path: '/auditorias',
       label: 'Auditorias',
       icon: 'ri-file-search-line'
